@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Roboto Mono', monospace;
+    background: linear-gradient(135deg, #0083e9, #005dbb);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .calculator {
+    background: #f7f9fc;
+    width: 350px;
+    border-radius: 15px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+  }
+  
+  .display {
+    background: #1c1c1c;
+    color: #ffffff;
+    padding: 20px;
+    text-align: right;
+    font-size: 2rem;
+  }
+  
+  .display input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    color: #ffffff;
+    text-align: right;
+    font-size: 2rem;
+    outline: none;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 20px;
+  }
+  
+  input[type="button"] {
+    background: #e7e9ed;
+    border: none;
+    padding: 15px;
+    font-size: 1rem;
+    border-radius: 10px;
+    color: #333333;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  input[type="button"]:hover {
+    background: #cdd2da;
+    transform: scale(1.05);
+  }
+  
+  input[type="button"]#clear {
+    background: #ff6b6b;
+    color: #ffffff;
+  }
+  
+  input[type="button"]#erase {
+    background: #ffae42;
+    color: #ffffff;
+  }
+  
+  input[type="button"]#equal {
+    background: #0083e9;
+    color: #ffffff;
+    grid-column: span 2;
+  }
+  
+  input[type="button"]#equal:hover {
+    background: #005dbb;
+  }
+  
